@@ -1,0 +1,521 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "hrmsContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "MyBridgeHRMS",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "account_lists",
+         "ObjectType": 0
+      },
+      {
+         "Name": "admin_payment_settings",
+         "ObjectType": 0
+      },
+      {
+         "Name": "allowance_options",
+         "ObjectType": 0
+      },
+      {
+         "Name": "allowances",
+         "ObjectType": 0
+      },
+      {
+         "Name": "announcement_employees",
+         "ObjectType": 0
+      },
+      {
+         "Name": "announcements",
+         "ObjectType": 0
+      },
+      {
+         "Name": "appraisals",
+         "ObjectType": 0
+      },
+      {
+         "Name": "assets",
+         "ObjectType": 0
+      },
+      {
+         "Name": "attendance_employees",
+         "ObjectType": 0
+      },
+      {
+         "Name": "attendance_regularizations",
+         "ObjectType": 0
+      },
+      {
+         "Name": "award_types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "awards",
+         "ObjectType": 0
+      },
+      {
+         "Name": "branches",
+         "ObjectType": 0
+      },
+      {
+         "Name": "ch_favorites",
+         "ObjectType": 0
+      },
+      {
+         "Name": "ch_messages",
+         "ObjectType": 0
+      },
+      {
+         "Name": "commissions",
+         "ObjectType": 0
+      },
+      {
+         "Name": "company_policies",
+         "ObjectType": 0
+      },
+      {
+         "Name": "competencies",
+         "ObjectType": 0
+      },
+      {
+         "Name": "complaints",
+         "ObjectType": 0
+      },
+      {
+         "Name": "contract_attechments",
+         "ObjectType": 0
+      },
+      {
+         "Name": "contract_comments",
+         "ObjectType": 0
+      },
+      {
+         "Name": "contract_notes",
+         "ObjectType": 0
+      },
+      {
+         "Name": "contract_types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "contracts",
+         "ObjectType": 0
+      },
+      {
+         "Name": "coupons",
+         "ObjectType": 0
+      },
+      {
+         "Name": "custom_questions",
+         "ObjectType": 0
+      },
+      {
+         "Name": "deduction_options",
+         "ObjectType": 0
+      },
+      {
+         "Name": "departments",
+         "ObjectType": 0
+      },
+      {
+         "Name": "deposits",
+         "ObjectType": 0
+      },
+      {
+         "Name": "designations",
+         "ObjectType": 0
+      },
+      {
+         "Name": "documents",
+         "ObjectType": 0
+      },
+      {
+         "Name": "ducument_uploads",
+         "ObjectType": 0
+      },
+      {
+         "Name": "email_template_langs",
+         "ObjectType": 0
+      },
+      {
+         "Name": "email_templates",
+         "ObjectType": 0
+      },
+      {
+         "Name": "employee_documents",
+         "ObjectType": 0
+      },
+      {
+         "Name": "employees",
+         "ObjectType": 0
+      },
+      {
+         "Name": "event_employees",
+         "ObjectType": 0
+      },
+      {
+         "Name": "events",
+         "ObjectType": 0
+      },
+      {
+         "Name": "expense_types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "expenses",
+         "ObjectType": 0
+      },
+      {
+         "Name": "experience_certificates",
+         "ObjectType": 0
+      },
+      {
+         "Name": "failed_jobs",
+         "ObjectType": 0
+      },
+      {
+         "Name": "generate_offer_letters",
+         "ObjectType": 0
+      },
+      {
+         "Name": "genrate_payslip_options",
+         "ObjectType": 0
+      },
+      {
+         "Name": "goal_trackings",
+         "ObjectType": 0
+      },
+      {
+         "Name": "goal_types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "holidays",
+         "ObjectType": 0
+      },
+      {
+         "Name": "income_types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "indicators",
+         "ObjectType": 0
+      },
+      {
+         "Name": "interview_schedules",
+         "ObjectType": 0
+      },
+      {
+         "Name": "ip_restricts",
+         "ObjectType": 0
+      },
+      {
+         "Name": "job_application_notes",
+         "ObjectType": 0
+      },
+      {
+         "Name": "job_applications",
+         "ObjectType": 0
+      },
+      {
+         "Name": "job_categories",
+         "ObjectType": 0
+      },
+      {
+         "Name": "job_on_boards",
+         "ObjectType": 0
+      },
+      {
+         "Name": "job_stages",
+         "ObjectType": 0
+      },
+      {
+         "Name": "jobs",
+         "ObjectType": 0
+      },
+      {
+         "Name": "join_us",
+         "ObjectType": 0
+      },
+      {
+         "Name": "joining_letters",
+         "ObjectType": 0
+      },
+      {
+         "Name": "landing_page_sections",
+         "ObjectType": 0
+      },
+      {
+         "Name": "landing_page_settings",
+         "ObjectType": 0
+      },
+      {
+         "Name": "languages",
+         "ObjectType": 0
+      },
+      {
+         "Name": "leave_types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "leaves",
+         "ObjectType": 0
+      },
+      {
+         "Name": "loan_options",
+         "ObjectType": 0
+      },
+      {
+         "Name": "loans",
+         "ObjectType": 0
+      },
+      {
+         "Name": "login_details",
+         "ObjectType": 0
+      },
+      {
+         "Name": "meeting_employees",
+         "ObjectType": 0
+      },
+      {
+         "Name": "meetings",
+         "ObjectType": 0
+      },
+      {
+         "Name": "migrations",
+         "ObjectType": 0
+      },
+      {
+         "Name": "model_has_permissions",
+         "ObjectType": 0
+      },
+      {
+         "Name": "model_has_roles",
+         "ObjectType": 0
+      },
+      {
+         "Name": "noc_certificates",
+         "ObjectType": 0
+      },
+      {
+         "Name": "notification_template_langs",
+         "ObjectType": 0
+      },
+      {
+         "Name": "notification_templates",
+         "ObjectType": 0
+      },
+      {
+         "Name": "orders",
+         "ObjectType": 0
+      },
+      {
+         "Name": "other_payments",
+         "ObjectType": 0
+      },
+      {
+         "Name": "overtimes",
+         "ObjectType": 0
+      },
+      {
+         "Name": "password_resets",
+         "ObjectType": 0
+      },
+      {
+         "Name": "pay_slips",
+         "ObjectType": 0
+      },
+      {
+         "Name": "payees",
+         "ObjectType": 0
+      },
+      {
+         "Name": "payers",
+         "ObjectType": 0
+      },
+      {
+         "Name": "payment_types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "payslip_types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "performance__types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "permissions",
+         "ObjectType": 0
+      },
+      {
+         "Name": "personal_access_tokens",
+         "ObjectType": 0
+      },
+      {
+         "Name": "plan_requests",
+         "ObjectType": 0
+      },
+      {
+         "Name": "plans",
+         "ObjectType": 0
+      },
+      {
+         "Name": "promotions",
+         "ObjectType": 0
+      },
+      {
+         "Name": "referral_settings",
+         "ObjectType": 0
+      },
+      {
+         "Name": "referral_transactions",
+         "ObjectType": 0
+      },
+      {
+         "Name": "resignations",
+         "ObjectType": 0
+      },
+      {
+         "Name": "role_has_permissions",
+         "ObjectType": 0
+      },
+      {
+         "Name": "roles",
+         "ObjectType": 0
+      },
+      {
+         "Name": "salary_bands",
+         "ObjectType": 0
+      },
+      {
+         "Name": "salary_details",
+         "ObjectType": 0
+      },
+      {
+         "Name": "saturation_deductions",
+         "ObjectType": 0
+      },
+      {
+         "Name": "set_salaries",
+         "ObjectType": 0
+      },
+      {
+         "Name": "settings",
+         "ObjectType": 0
+      },
+      {
+         "Name": "template",
+         "ObjectType": 0
+      },
+      {
+         "Name": "termination_types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "terminations",
+         "ObjectType": 0
+      },
+      {
+         "Name": "ticket_replies",
+         "ObjectType": 0
+      },
+      {
+         "Name": "tickets",
+         "ObjectType": 0
+      },
+      {
+         "Name": "time_sheets",
+         "ObjectType": 0
+      },
+      {
+         "Name": "trainers",
+         "ObjectType": 0
+      },
+      {
+         "Name": "training_types",
+         "ObjectType": 0
+      },
+      {
+         "Name": "trainings",
+         "ObjectType": 0
+      },
+      {
+         "Name": "transaction_orders",
+         "ObjectType": 0
+      },
+      {
+         "Name": "transfer_balances",
+         "ObjectType": 0
+      },
+      {
+         "Name": "transfers",
+         "ObjectType": 0
+      },
+      {
+         "Name": "travels",
+         "ObjectType": 0
+      },
+      {
+         "Name": "user_coupons",
+         "ObjectType": 0
+      },
+      {
+         "Name": "user_email_templates",
+         "ObjectType": 0
+      },
+      {
+         "Name": "users",
+         "ObjectType": 0
+      },
+      {
+         "Name": "warnings",
+         "ObjectType": 0
+      },
+      {
+         "Name": "webhooks",
+         "ObjectType": 0
+      },
+      {
+         "Name": "zoom_meetings",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDatabaseNamesForRoutines": true,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseInternalAccessModifiersForSprocsAndFunctions": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false,
+   "UseT4Split": false
+}
