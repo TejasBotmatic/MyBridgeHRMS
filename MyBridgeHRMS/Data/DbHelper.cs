@@ -2,13 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
-
+using System.Threading.Tasks;
 
 namespace MyBridgeHRMS.Data
 {
     public class DbHelper
     {
         private readonly string _connectionString;
+
         public DbHelper(string connectionString)
         {
             _connectionString = connectionString;
@@ -19,8 +20,9 @@ namespace MyBridgeHRMS.Data
         {
             return new MySqlConnection(_connectionString);
         }
-        // 🔹 COMMON METHOD TO EXECUTE QUERY (SELECT)
-        public List<Dictionary<string, object>> ExecuteQuery(string storedProcedure, Dictionary<string, object> parameters = null)
+
+        // 🔹 COMMON METHOD TO EXECUTE QUERY (SELECT) ASYNCHRONOUSLY
+        public async Task<List<Dictionary<string, object>>> ExecuteQueryAsync(string storedProcedure, Dictionary<string, object> parameters = null)
         {
             var resultList = new List<Dictionary<string, object>>();
 
@@ -31,10 +33,10 @@ namespace MyBridgeHRMS.Data
                     command.CommandType = CommandType.StoredProcedure;
                     AddParameters(command, parameters);
 
-                    connection.Open();
-                    using (var reader = command.ExecuteReader())
+                    await connection.OpenAsync(); // Async connection opening
+                    using (var reader = await command.ExecuteReaderAsync()) // Async reader execution
                     {
-                        while (reader.Read())
+                        while (await reader.ReadAsync()) // Asynchronously read rows
                         {
                             var row = new Dictionary<string, object>();
 
@@ -48,12 +50,12 @@ namespace MyBridgeHRMS.Data
                     }
                 }
             }
+
             return resultList;
         }
 
-
-        // 🔹 COMMON METHOD TO EXECUTE NON-QUERY (INSERT, UPDATE, DELETE)
-        public int ExecuteNonQuery(string storedProcedure, Dictionary<string, object> parameters)
+        // 🔹 COMMON METHOD TO EXECUTE NON-QUERY (INSERT, UPDATE, DELETE) ASYNCHRONOUSLY
+        public async Task<int> ExecuteNonQueryAsync(string storedProcedure, Dictionary<string, object> parameters)
         {
             using (var connection = new MySqlConnection(_connectionString))
             {
@@ -62,8 +64,8 @@ namespace MyBridgeHRMS.Data
                     command.CommandType = CommandType.StoredProcedure;
                     AddParameters(command, parameters);
 
-                    connection.Open();
-                    return command.ExecuteNonQuery();
+                    await connection.OpenAsync(); // Async connection opening
+                    return await command.ExecuteNonQueryAsync(); // Async execution
                 }
             }
         }
