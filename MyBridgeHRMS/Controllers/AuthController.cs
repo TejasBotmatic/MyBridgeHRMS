@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using MyBridgeHRMS.Auth;
 using MyBridgeHRMS.AuthModels;
 using MyBridgeHRMS.AuthServices;
+using MyBridgeHRMS.Dtos;
+using MyBridgeHRMS.Models;
 using System.Threading.Tasks;
 
 namespace MyBridgeHRMS.Controllers
@@ -42,9 +44,9 @@ namespace MyBridgeHRMS.Controllers
         }
 
         [HttpPost("addUser")]
-        public async Task<IActionResult> AddUser([FromBody] User user)
+        public async Task<IActionResult> AddUser([FromBody] EmployeeInsertRequestDto employeeDto)
         {
-            var addedUser = await _auth.AddUser(user);
+            var addedUser = await _auth.AddUser(employeeDto);
             return Ok(addedUser);
         }
 

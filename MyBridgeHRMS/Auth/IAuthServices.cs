@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using MyBridgeHRMS.AuthModels;
+using MyBridgeHRMS.Dtos;
+using MyBridgeHRMS.Models;
 using System.Security.Claims;
 
 namespace MyBridgeHRMS.Auth
@@ -8,11 +10,11 @@ namespace MyBridgeHRMS.Auth
     public interface IAuthServices
     {
            
-            Task<User> AddUser(User user);
-            Task<string> GenerateAndAssignRefreshToken(User user);
+            Task<int> AddUser(EmployeeInsertRequestDto employeeDto);
+            Task<string> GenerateAndAssignRefreshToken(Employees user);
             ClaimsPrincipal GetPrincipalFromExpiredToken(string token);
-            Task<bool> UpdateUser(User user);
-            Task<string> GenerateAccessToken(User user);
+            Task<bool> UpdateUser(Employees user);
+            Task<string> GenerateAccessToken(Employees user);
             Task<LoginUserResDto> Login(LoginRequestDto loginRequest);
         Task<(string newAccessToken, string newRefreshToken)> RefreshToken(string expiredAccessToken, string refreshToken); 
         }

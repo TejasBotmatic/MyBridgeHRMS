@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace MyBridgeHRMS.Models;
 
-public partial class Employee
+public partial class Employees
 {
-    public ulong Id { get; set; }
+    public int Id { get; set; }
 
     public int UserId { get; set; }
 
@@ -39,17 +39,17 @@ public partial class Employee
 
     public string Documents { get; set; }
 
-    public string AccountHolderName { get; set; }
+   // public string ?AccountHolderName { get; set; }
 
-    public string AccountNumber { get; set; }
+   // public string AccountNumber { get; set; }
 
-    public string BankName { get; set; }
+    //public string BankName { get; set; }
 
-    public string BankIdentifierCode { get; set; }
+    //public string BankIdentifierCode { get; set; }
 
-    public string BranchLocation { get; set; }
+    //public string BranchLocation { get; set; }
 
-    public string TaxPayerId { get; set; }
+    //public string TaxPayerId { get; set; }
 
     public int? SalaryType { get; set; }
 
@@ -67,8 +67,10 @@ public partial class Employee
 
     public int? ManagerId { get; set; }
 
-    public string Role { get; set; }
+   // public string ?Role { get; set; }
 
+    public int? RoleId { get; set; }
+    public Role? Role { get; set; }
     public string MaritalStatus { get; set; }
 
     public string Childern { get; set; }
@@ -76,4 +78,6 @@ public partial class Employee
     public string AnnualCtc { get; set; }
 
     public string SalaryBand { get; set; }
+    public string? RefreshToken { get; set; }
+    public DateTime? RefreshTokenExpire { get; set; }
 }
