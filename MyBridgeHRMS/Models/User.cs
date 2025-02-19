@@ -7,7 +7,7 @@ namespace MyBridgeHRMS.Models;
 
 public partial class User
 {
-    public int Id { get; set; }
+    public ulong Id { get; set; }
 
     public string Name { get; set; }
 
@@ -23,15 +23,15 @@ public partial class User
 
     public string Lang { get; set; }
 
-    //public int? Plan { get; set; }
+    public int? Plan { get; set; }
 
-    //public DateOnly? PlanExpireDate { get; set; }
+    public DateOnly? PlanExpireDate { get; set; }
 
-    //public int RequestedPlan { get; set; }
+    public int RequestedPlan { get; set; }
 
-    //public DateOnly? TrialExpireDate { get; set; }
+    public DateOnly? TrialExpireDate { get; set; }
 
-    //public int TrialPlan { get; set; }
+    public int TrialPlan { get; set; }
 
     public int IsLoginEnable { get; set; }
 
@@ -41,11 +41,11 @@ public partial class User
 
     public int IsActive { get; set; }
 
-    //public int ReferralCode { get; set; }
+    public int ReferralCode { get; set; }
 
-    //public int UsedReferralCode { get; set; }
+    public int UsedReferralCode { get; set; }
 
-    //public int CommissionAmount { get; set; }
+    public int CommissionAmount { get; set; }
 
     public bool ActiveStatus { get; set; }
 
@@ -62,6 +62,4 @@ public partial class User
     public DateTime? CreatedAt { get; set; }
 
     public DateTime? UpdatedAt { get; set; }
-   
-
 }

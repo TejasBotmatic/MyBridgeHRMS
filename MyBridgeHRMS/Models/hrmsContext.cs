@@ -13,14 +13,3984 @@ public partial class hrmsContext : DbContext
     {
     }
 
+    public virtual DbSet<AccountList> AccountLists { get; set; }
+
+    public virtual DbSet<AdminPaymentSetting> AdminPaymentSettings { get; set; }
+
+    public virtual DbSet<Allowance> Allowances { get; set; }
+
+    public virtual DbSet<AllowanceOption> AllowanceOptions { get; set; }
+
+    public virtual DbSet<Announcement> Announcements { get; set; }
+
+    public virtual DbSet<AnnouncementEmployee> AnnouncementEmployees { get; set; }
+
+    public virtual DbSet<Appraisal> Appraisals { get; set; }
+
+    public virtual DbSet<Asset> Assets { get; set; }
+
+    public virtual DbSet<AttendanceEmployee> AttendanceEmployees { get; set; }
+
+    public virtual DbSet<AttendanceRegularization> AttendanceRegularizations { get; set; }
+
+    public virtual DbSet<Award> Awards { get; set; }
+
+    public virtual DbSet<AwardType> AwardTypes { get; set; }
+
+    public virtual DbSet<Branch> Branches { get; set; }
+
+    public virtual DbSet<ChFavorite> ChFavorites { get; set; }
+
+    public virtual DbSet<ChMessage> ChMessages { get; set; }
+
+    public virtual DbSet<Commission> Commissions { get; set; }
+
+    public virtual DbSet<CompanyPolicy> CompanyPolicies { get; set; }
+
+    public virtual DbSet<Competency> Competencies { get; set; }
+
+    public virtual DbSet<Complaint> Complaints { get; set; }
+
+    public virtual DbSet<Contract> Contracts { get; set; }
+
+    public virtual DbSet<ContractAttechment> ContractAttechments { get; set; }
+
+    public virtual DbSet<ContractComment> ContractComments { get; set; }
+
+    public virtual DbSet<ContractNote> ContractNotes { get; set; }
+
+    public virtual DbSet<ContractType> ContractTypes { get; set; }
+
+    public virtual DbSet<Coupon> Coupons { get; set; }
+
+    public virtual DbSet<CustomQuestion> CustomQuestions { get; set; }
+
+    public virtual DbSet<DeductionOption> DeductionOptions { get; set; }
+
+    public virtual DbSet<Department> Departments { get; set; }
+
+    public virtual DbSet<Deposit> Deposits { get; set; }
+
+    public virtual DbSet<Designation> Designations { get; set; }
+
+    public virtual DbSet<Document> Documents { get; set; }
+
+    public virtual DbSet<DucumentUpload> DucumentUploads { get; set; }
+
+    public virtual DbSet<EmailTemplate> EmailTemplates { get; set; }
+
+    public virtual DbSet<EmailTemplateLang> EmailTemplateLangs { get; set; }
+
+    public virtual DbSet<Employee> Employees { get; set; }
+
+    public virtual DbSet<EmployeeDocument> EmployeeDocuments { get; set; }
+
+    public virtual DbSet<Event> Events { get; set; }
+
+    public virtual DbSet<EventEmployee> EventEmployees { get; set; }
+
+    public virtual DbSet<Expense> Expenses { get; set; }
+
+    public virtual DbSet<ExpenseType> ExpenseTypes { get; set; }
+
+    public virtual DbSet<ExperienceCertificate> ExperienceCertificates { get; set; }
+
+    public virtual DbSet<FailedJob> FailedJobs { get; set; }
+
+    public virtual DbSet<GenerateOfferLetter> GenerateOfferLetters { get; set; }
+
+    public virtual DbSet<GenratePayslipOption> GenratePayslipOptions { get; set; }
+
+    public virtual DbSet<GoalTracking> GoalTrackings { get; set; }
+
+    public virtual DbSet<GoalType> GoalTypes { get; set; }
+
+    public virtual DbSet<Holiday> Holidays { get; set; }
+
+    public virtual DbSet<IncomeType> IncomeTypes { get; set; }
+
+    public virtual DbSet<Indicator> Indicators { get; set; }
+
+    public virtual DbSet<InterviewSchedule> InterviewSchedules { get; set; }
+
+    public virtual DbSet<IpRestrict> IpRestricts { get; set; }
+
+    public virtual DbSet<Job> Jobs { get; set; }
+
+    public virtual DbSet<JobApplication> JobApplications { get; set; }
+
+    public virtual DbSet<JobApplicationNote> JobApplicationNotes { get; set; }
+
+    public virtual DbSet<JobCategory> JobCategories { get; set; }
+
+    public virtual DbSet<JobOnBoard> JobOnBoards { get; set; }
+
+    public virtual DbSet<JobStage> JobStages { get; set; }
+
+    public virtual DbSet<JoinU> JoinUs { get; set; }
+
+    public virtual DbSet<JoiningLetter> JoiningLetters { get; set; }
+
+    public virtual DbSet<LandingPageSection> LandingPageSections { get; set; }
+
+    public virtual DbSet<LandingPageSetting> LandingPageSettings { get; set; }
+
+    public virtual DbSet<Language> Languages { get; set; }
+
+    public virtual DbSet<Leaf> Leaves { get; set; }
+
+    public virtual DbSet<LeaveType> LeaveTypes { get; set; }
+
+    public virtual DbSet<Loan> Loans { get; set; }
+
+    public virtual DbSet<LoanOption> LoanOptions { get; set; }
+
+    public virtual DbSet<LoginDetail> LoginDetails { get; set; }
+
+    public virtual DbSet<Meeting> Meetings { get; set; }
+
+    public virtual DbSet<MeetingEmployee> MeetingEmployees { get; set; }
+
+    public virtual DbSet<Migration> Migrations { get; set; }
+
+    public virtual DbSet<ModelHasPermission> ModelHasPermissions { get; set; }
+
+    public virtual DbSet<ModelHasRole> ModelHasRoles { get; set; }
+
+    public virtual DbSet<NocCertificate> NocCertificates { get; set; }
+
+    public virtual DbSet<NotificationTemplate> NotificationTemplates { get; set; }
+
+    public virtual DbSet<NotificationTemplateLang> NotificationTemplateLangs { get; set; }
+
+    public virtual DbSet<Order> Orders { get; set; }
+
+    public virtual DbSet<OtherPayment> OtherPayments { get; set; }
+
+    public virtual DbSet<Overtime> Overtimes { get; set; }
+
+    public virtual DbSet<PasswordReset> PasswordResets { get; set; }
+
+    public virtual DbSet<PaySlip> PaySlips { get; set; }
+
+    public virtual DbSet<Payee> Payees { get; set; }
+
+    public virtual DbSet<Payer> Payers { get; set; }
+
+    public virtual DbSet<PaymentType> PaymentTypes { get; set; }
+
+    public virtual DbSet<PayslipType> PayslipTypes { get; set; }
+
+    public virtual DbSet<PerformanceType> PerformanceTypes { get; set; }
+
+    public virtual DbSet<Permission> Permissions { get; set; }
+
+    public virtual DbSet<PersonalAccessToken> PersonalAccessTokens { get; set; }
+
+    public virtual DbSet<Plan> Plans { get; set; }
+
+    public virtual DbSet<PlanRequest> PlanRequests { get; set; }
+
+    public virtual DbSet<Promotion> Promotions { get; set; }
+
+    public virtual DbSet<ReferralSetting> ReferralSettings { get; set; }
+
+    public virtual DbSet<ReferralTransaction> ReferralTransactions { get; set; }
+
+    public virtual DbSet<Resignation> Resignations { get; set; }
+
+    public virtual DbSet<Role> Roles { get; set; }
+
+    public virtual DbSet<SalaryBand> SalaryBands { get; set; }
+
+    public virtual DbSet<SalaryDetail> SalaryDetails { get; set; }
+
+    public virtual DbSet<SaturationDeduction> SaturationDeductions { get; set; }
+
+    public virtual DbSet<SetSalary> SetSalaries { get; set; }
+
+    public virtual DbSet<Setting> Settings { get; set; }
+
+    public virtual DbSet<Template> Templates { get; set; }
+
+    public virtual DbSet<Termination> Terminations { get; set; }
+
+    public virtual DbSet<TerminationType> TerminationTypes { get; set; }
+
+    public virtual DbSet<Ticket> Tickets { get; set; }
+
+    public virtual DbSet<TicketReply> TicketReplies { get; set; }
+
+    public virtual DbSet<TimeSheet> TimeSheets { get; set; }
+
+    public virtual DbSet<Trainer> Trainers { get; set; }
+
+    public virtual DbSet<Training> Trainings { get; set; }
+
+    public virtual DbSet<TrainingType> TrainingTypes { get; set; }
+
+    public virtual DbSet<TransactionOrder> TransactionOrders { get; set; }
+
+    public virtual DbSet<Transfer> Transfers { get; set; }
+
+    public virtual DbSet<TransferBalance> TransferBalances { get; set; }
+
+    public virtual DbSet<Travel> Travels { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
+
+    public virtual DbSet<UserCoupon> UserCoupons { get; set; }
+
+    public virtual DbSet<UserEmailTemplate> UserEmailTemplates { get; set; }
+
+    public virtual DbSet<Warning> Warnings { get; set; }
+
+    public virtual DbSet<Webhook> Webhooks { get; set; }
+
+    public virtual DbSet<ZoomMeeting> ZoomMeetings { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder
             .UseCollation("utf8mb4_0900_ai_ci")
             .HasCharSet("utf8mb4");
+
+        modelBuilder.Entity<AccountList>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("account_lists")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AccountName)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("account_name");
+            entity.Property(e => e.AccountNumber)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("account_number");
+            entity.Property(e => e.BankBranch)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("bank_branch");
+            entity.Property(e => e.BranchCode)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("branch_code");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("created_by");
+            entity.Property(e => e.InitialBalance)
+                .HasColumnType("double(20,2)")
+                .HasColumnName("initial_balance");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<AdminPaymentSetting>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("admin_payment_settings")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => new { e.Name, e.CreatedBy }, "admin_payment_settings_name_created_by_unique").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.Value)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("value");
+        });
+
+        modelBuilder.Entity<Allowance>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("allowances")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AllowanceOption).HasColumnName("allowance_option");
+            entity.Property(e => e.Amount)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("amount");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.Type)
+                .HasMaxLength(191)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<AllowanceOption>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("allowance_options")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CalculationType)
+                .HasMaxLength(200)
+                .HasColumnName("calculation_type");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.PercentageDeduction)
+                .HasMaxLength(200)
+                .HasColumnName("percentage_deduction");
+            entity.Property(e => e.Type)
+                .HasMaxLength(200)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Announcement>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("announcements")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.BranchId).HasColumnName("branch_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.DepartmentId)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("department_id");
+            entity.Property(e => e.Description)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("description");
+            entity.Property(e => e.EmployeeId)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("employee_id");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.StartDate).HasColumnName("start_date");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<AnnouncementEmployee>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("announcement_employees")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AnnouncementId).HasColumnName("announcement_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Appraisal>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("appraisals")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Administration).HasColumnName("administration");
+            entity.Property(e => e.AppraisalDate)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("appraisal_date");
+            entity.Property(e => e.Attendance).HasColumnName("attendance");
+            entity.Property(e => e.Branch).HasColumnName("branch");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.CustomerExperience).HasColumnName("customer_experience");
+            entity.Property(e => e.Employee).HasColumnName("employee");
+            entity.Property(e => e.Integrity).HasColumnName("integrity");
+            entity.Property(e => e.Marketing).HasColumnName("marketing");
+            entity.Property(e => e.Professionalism).HasColumnName("professionalism");
+            entity.Property(e => e.Rating)
+                .HasMaxLength(191)
+                .HasColumnName("rating");
+            entity.Property(e => e.Remark)
+                .HasColumnType("text")
+                .HasColumnName("remark");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Asset>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("assets")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Amount)
+                .HasColumnType("double(20,2)")
+                .HasColumnName("amount");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.EmployeeId)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("employee_id");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.PurchaseDate).HasColumnName("purchase_date");
+            entity.Property(e => e.SupportedDate).HasColumnName("supported_date");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<AttendanceEmployee>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("attendance_employees")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.ClockIn)
+                .HasColumnType("time")
+                .HasColumnName("clock_in");
+            entity.Property(e => e.ClockOut)
+                .HasColumnType("time")
+                .HasColumnName("clock_out");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Date).HasColumnName("date");
+            entity.Property(e => e.EarlyLeaving)
+                .HasColumnType("time")
+                .HasColumnName("early_leaving");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.Late)
+                .HasColumnType("time")
+                .HasColumnName("late");
+            entity.Property(e => e.Location)
+                .HasMaxLength(200)
+                .HasColumnName("location");
+            entity.Property(e => e.Overtime)
+                .HasColumnType("time")
+                .HasColumnName("overtime");
+            entity.Property(e => e.Status)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("status");
+            entity.Property(e => e.TotalRest)
+                .HasColumnType("time")
+                .HasColumnName("total_rest");
+            entity.Property(e => e.TotalWork)
+                .HasMaxLength(8)
+                .HasDefaultValueSql("'00:00:00'")
+                .HasColumnName("total_work");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<AttendanceRegularization>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("attendance_regularizations")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AttendanceDate).HasColumnName("attendance_date");
+            entity.Property(e => e.AttendanceEmployeeId).HasColumnName("attendance_employee_id");
+            entity.Property(e => e.ClockInTime)
+                .HasColumnType("time")
+                .HasColumnName("clock_in_time");
+            entity.Property(e => e.ClockOutTime)
+                .HasColumnType("time")
+                .HasColumnName("clock_out_time");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.ManagerId).HasColumnName("manager_id");
+            entity.Property(e => e.Reason)
+                .HasColumnType("text")
+                .HasColumnName("reason");
+            entity.Property(e => e.Status)
+                .HasMaxLength(191)
+                .HasDefaultValueSql("'pending'")
+                .HasColumnName("status");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Award>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("awards")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AwardType)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("award_type");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Date).HasColumnName("date");
+            entity.Property(e => e.Description)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("description");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.Gift)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("gift");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<AwardType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("award_types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Branch>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("branches")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<ChFavorite>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("ch_favorites")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.FavoriteId).HasColumnName("favorite_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+        });
+
+        modelBuilder.Entity<ChMessage>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("ch_messages")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("id");
+            entity.Property(e => e.Attachment)
+                .HasMaxLength(191)
+                .HasColumnName("attachment");
+            entity.Property(e => e.Body)
+                .HasMaxLength(5000)
+                .HasColumnName("body");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.FromId).HasColumnName("from_id");
+            entity.Property(e => e.Seen).HasColumnName("seen");
+            entity.Property(e => e.ToId).HasColumnName("to_id");
+            entity.Property(e => e.Type)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Commission>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("commissions")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Amount)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("amount");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.Type)
+                .HasMaxLength(191)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<CompanyPolicy>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("company_policies")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Attachment)
+                .HasMaxLength(191)
+                .HasColumnName("attachment");
+            entity.Property(e => e.Branch).HasColumnName("branch");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Competency>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("competencies")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.Type)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Complaint>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("complaints")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.ComplaintAgainst).HasColumnName("complaint_against");
+            entity.Property(e => e.ComplaintDate).HasColumnName("complaint_date");
+            entity.Property(e => e.ComplaintFrom).HasColumnName("complaint_from");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("description");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Contract>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("contracts")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CompanySignature).HasColumnName("company_signature");
+            entity.Property(e => e.ContractDescription).HasColumnName("contract_description");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Description).HasColumnName("description");
+            entity.Property(e => e.EmployeeName).HasColumnName("employee_name");
+            entity.Property(e => e.EmployeeSignature).HasColumnName("employee_signature");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.Notes)
+                .HasMaxLength(191)
+                .HasColumnName("notes");
+            entity.Property(e => e.StartDate).HasColumnName("start_date");
+            entity.Property(e => e.Status)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasDefaultValueSql("'pending'")
+                .HasColumnName("status");
+            entity.Property(e => e.Subject)
+                .HasMaxLength(191)
+                .HasColumnName("subject");
+            entity.Property(e => e.Type).HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.Value)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("value");
+        });
+
+        modelBuilder.Entity<ContractAttechment>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("contract_attechments")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.ContractId).HasColumnName("contract_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Files)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("files");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UserId)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("user_id");
+        });
+
+        modelBuilder.Entity<ContractComment>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("contract_comments")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Comment)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("comment");
+            entity.Property(e => e.ContractId).HasColumnName("contract_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UserId)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("user_id");
+        });
+
+        modelBuilder.Entity<ContractNote>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("contract_notes")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.ContractId).HasColumnName("contract_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Note)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("note");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+        });
+
+        modelBuilder.Entity<ContractType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("contract_types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Coupon>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("coupons")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Code)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("code");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.Discount)
+                .HasColumnType("double(8,2)")
+                .HasColumnName("discount");
+            entity.Property(e => e.IsActive)
+                .HasDefaultValueSql("'1'")
+                .HasColumnName("is_active");
+            entity.Property(e => e.Limit).HasColumnName("limit");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<CustomQuestion>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("custom_questions")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.IsRequired)
+                .HasMaxLength(191)
+                .HasColumnName("is_required");
+            entity.Property(e => e.Question)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("question");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<DeductionOption>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("deduction_options")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CalculationType)
+                .HasMaxLength(200)
+                .HasColumnName("calculation_type");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.PercentageDeduction)
+                .HasMaxLength(200)
+                .HasColumnName("percentage_deduction");
+            entity.Property(e => e.Type)
+                .HasMaxLength(200)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Department>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("departments")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.BranchId).HasColumnName("branch_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Deposit>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("deposits")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AccountId).HasColumnName("account_id");
+            entity.Property(e => e.Amount)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("amount");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Date).HasColumnName("date");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.IncomeCategoryId).HasColumnName("income_category_id");
+            entity.Property(e => e.PayerId).HasColumnName("payer_id");
+            entity.Property(e => e.PaymentTypeId).HasColumnName("payment_type_id");
+            entity.Property(e => e.ReferalId)
+                .HasMaxLength(191)
+                .HasColumnName("referal_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Designation>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("designations")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.BranchId).HasColumnName("branch_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.DepartmentId).HasColumnName("department_id");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Document>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("documents")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.IsRequired)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("is_required");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<DucumentUpload>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("ducument_uploads")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.Document)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("document");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.Role)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("role");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<EmailTemplate>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("email_templates")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.From)
+                .HasMaxLength(191)
+                .HasColumnName("from");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.Slug)
+                .HasMaxLength(191)
+                .HasColumnName("slug");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<EmailTemplateLang>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("email_template_langs")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Content)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("content");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Lang)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("lang");
+            entity.Property(e => e.ParentId).HasColumnName("parent_id");
+            entity.Property(e => e.Subject)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("subject");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Employee>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("employees")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AccountHolderName)
+                .HasMaxLength(191)
+                .HasColumnName("account_holder_name");
+            entity.Property(e => e.AccountNumber)
+                .HasMaxLength(191)
+                .HasColumnName("account_number");
+            entity.Property(e => e.AccountType).HasColumnName("account_type");
+            entity.Property(e => e.Address)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("address");
+            entity.Property(e => e.AnnualCtc)
+                .HasMaxLength(200)
+                .HasColumnName("annual_ctc");
+            entity.Property(e => e.BankIdentifierCode)
+                .HasMaxLength(191)
+                .HasColumnName("bank_identifier_code");
+            entity.Property(e => e.BankName)
+                .HasMaxLength(191)
+                .HasColumnName("bank_name");
+            entity.Property(e => e.BiometricEmpId).HasColumnName("biometric_emp_id");
+            entity.Property(e => e.BranchId).HasColumnName("branch_id");
+            entity.Property(e => e.BranchLocation)
+                .HasMaxLength(191)
+                .HasColumnName("branch_location");
+            entity.Property(e => e.Childern)
+                .HasMaxLength(200)
+                .HasColumnName("childern");
+            entity.Property(e => e.CompanyDoj)
+                .HasMaxLength(191)
+                .HasColumnName("company_doj");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.DepartmentId).HasColumnName("department_id");
+            entity.Property(e => e.DesignationId).HasColumnName("designation_id");
+            entity.Property(e => e.Dob).HasColumnName("dob");
+            entity.Property(e => e.Documents)
+                .HasMaxLength(191)
+                .HasColumnName("documents");
+            entity.Property(e => e.Email)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("email");
+            entity.Property(e => e.EmployeeId)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("employee_id");
+            entity.Property(e => e.Gender)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("gender");
+            entity.Property(e => e.IsActive)
+                .HasDefaultValueSql("'1'")
+                .HasColumnName("is_active");
+            entity.Property(e => e.ManagerId).HasColumnName("manager_id");
+            entity.Property(e => e.MaritalStatus)
+                .HasMaxLength(200)
+                .HasColumnName("marital_status");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.Password)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("password");
+            entity.Property(e => e.Phone)
+                .HasMaxLength(191)
+                .HasColumnName("phone");
+            entity.Property(e => e.Role)
+                .HasMaxLength(200)
+                .HasColumnName("role");
+            entity.Property(e => e.Salary)
+                .HasColumnType("double(20,2)")
+                .HasColumnName("salary");
+            entity.Property(e => e.SalaryBand)
+                .HasMaxLength(200)
+                .HasColumnName("salary_band");
+            entity.Property(e => e.SalaryType).HasColumnName("salary_type");
+            entity.Property(e => e.TaxPayerId)
+                .HasMaxLength(191)
+                .HasColumnName("tax_payer_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+        });
+
+        modelBuilder.Entity<EmployeeDocument>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("employee_documents")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.DocumentId).HasColumnName("document_id");
+            entity.Property(e => e.DocumentValue)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("document_value");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Event>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("events")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.BranchId).HasColumnName("branch_id");
+            entity.Property(e => e.Color)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("color");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.DepartmentId)
+                .IsRequired()
+                .HasColumnName("department_id");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.EmployeeId)
+                .IsRequired()
+                .HasColumnName("employee_id");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.StartDate).HasColumnName("start_date");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<EventEmployee>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("event_employees")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.EventId).HasColumnName("event_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Expense>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("expenses")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AccountId).HasColumnName("account_id");
+            entity.Property(e => e.Amount)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("amount");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Date).HasColumnName("date");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.ExpenseCategoryId).HasColumnName("expense_category_id");
+            entity.Property(e => e.PayeeId).HasColumnName("payee_id");
+            entity.Property(e => e.PaymentTypeId).HasColumnName("payment_type_id");
+            entity.Property(e => e.ReferalId)
+                .HasMaxLength(191)
+                .HasColumnName("referal_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<ExpenseType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("expense_types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<ExperienceCertificate>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("experience_certificates")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Content)
+                .IsRequired()
+                .HasColumnName("content");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Lang)
+                .IsRequired()
+                .HasMaxLength(255)
+                .HasColumnName("lang");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<FailedJob>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("failed_jobs")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Connection)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("connection");
+            entity.Property(e => e.Exception)
+                .IsRequired()
+                .HasColumnName("exception");
+            entity.Property(e => e.FailedAt)
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                .HasColumnType("timestamp")
+                .HasColumnName("failed_at");
+            entity.Property(e => e.Payload)
+                .IsRequired()
+                .HasColumnName("payload");
+            entity.Property(e => e.Queue)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("queue");
+        });
+
+        modelBuilder.Entity<GenerateOfferLetter>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("generate_offer_letters")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Content)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("content");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Lang)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("lang");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<GenratePayslipOption>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("genrate_payslip_options")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<GoalTracking>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("goal_trackings")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Branch).HasColumnName("branch");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.GoalType).HasColumnName("goal_type");
+            entity.Property(e => e.Progress).HasColumnName("progress");
+            entity.Property(e => e.Rating)
+                .HasMaxLength(191)
+                .HasColumnName("rating");
+            entity.Property(e => e.StartDate).HasColumnName("start_date");
+            entity.Property(e => e.Status).HasColumnName("status");
+            entity.Property(e => e.Subject)
+                .HasMaxLength(191)
+                .HasColumnName("subject");
+            entity.Property(e => e.TargetAchievement)
+                .HasMaxLength(191)
+                .HasColumnName("target_achievement");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<GoalType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("goal_types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Holiday>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("holidays")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.Occasion)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("occasion");
+            entity.Property(e => e.StartDate).HasColumnName("start_date");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<IncomeType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("income_types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Indicator>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("indicators")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Administration).HasColumnName("administration");
+            entity.Property(e => e.Attendance).HasColumnName("attendance");
+            entity.Property(e => e.Branch).HasColumnName("branch");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.CreatedUser).HasColumnName("created_user");
+            entity.Property(e => e.CustomerExperience).HasColumnName("customer_experience");
+            entity.Property(e => e.Department).HasColumnName("department");
+            entity.Property(e => e.Designation).HasColumnName("designation");
+            entity.Property(e => e.Integrity).HasColumnName("integrity");
+            entity.Property(e => e.Marketing).HasColumnName("marketing");
+            entity.Property(e => e.Professionalism).HasColumnName("professionalism");
+            entity.Property(e => e.Rating)
+                .HasMaxLength(191)
+                .HasColumnName("rating");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<InterviewSchedule>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("interview_schedules")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Candidate).HasColumnName("candidate");
+            entity.Property(e => e.Comment)
+                .HasColumnType("text")
+                .HasColumnName("comment");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Date).HasColumnName("date");
+            entity.Property(e => e.Employee).HasColumnName("employee");
+            entity.Property(e => e.EmployeeResponse)
+                .HasMaxLength(191)
+                .HasColumnName("employee_response");
+            entity.Property(e => e.Time)
+                .HasColumnType("time")
+                .HasColumnName("time");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<IpRestrict>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("ip_restricts")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Ip)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("ip");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Job>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("jobs")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Applicant)
+                .HasMaxLength(191)
+                .HasColumnName("applicant");
+            entity.Property(e => e.Branch).HasColumnName("branch");
+            entity.Property(e => e.Category).HasColumnName("category");
+            entity.Property(e => e.Code)
+                .HasMaxLength(191)
+                .HasColumnName("code");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.CustomQuestion)
+                .HasMaxLength(191)
+                .HasColumnName("custom_question");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.Position).HasColumnName("position");
+            entity.Property(e => e.Requirement)
+                .HasColumnType("text")
+                .HasColumnName("requirement");
+            entity.Property(e => e.Skill)
+                .HasColumnType("text")
+                .HasColumnName("skill");
+            entity.Property(e => e.StartDate).HasColumnName("start_date");
+            entity.Property(e => e.Status)
+                .HasMaxLength(191)
+                .HasColumnName("status");
+            entity.Property(e => e.TermsAndConditions)
+                .HasColumnType("text")
+                .HasColumnName("terms_and_conditions");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.Visibility)
+                .HasMaxLength(191)
+                .HasColumnName("visibility");
+        });
+
+        modelBuilder.Entity<JobApplication>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("job_applications")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Address)
+                .HasMaxLength(191)
+                .HasColumnName("address");
+            entity.Property(e => e.City)
+                .HasMaxLength(191)
+                .HasColumnName("city");
+            entity.Property(e => e.Country)
+                .HasMaxLength(191)
+                .HasColumnName("country");
+            entity.Property(e => e.CoverLetter)
+                .HasColumnType("text")
+                .HasColumnName("cover_letter");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.CustomQuestion)
+                .HasColumnType("text")
+                .HasColumnName("custom_question");
+            entity.Property(e => e.Dob).HasColumnName("dob");
+            entity.Property(e => e.Email)
+                .HasMaxLength(191)
+                .HasColumnName("email");
+            entity.Property(e => e.Gender)
+                .HasMaxLength(191)
+                .HasColumnName("gender");
+            entity.Property(e => e.IsArchive).HasColumnName("is_archive");
+            entity.Property(e => e.Job).HasColumnName("job");
+            entity.Property(e => e.Name)
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.Order).HasColumnName("order");
+            entity.Property(e => e.Phone)
+                .HasMaxLength(191)
+                .HasColumnName("phone");
+            entity.Property(e => e.Profile)
+                .HasMaxLength(191)
+                .HasColumnName("profile");
+            entity.Property(e => e.Rating).HasColumnName("rating");
+            entity.Property(e => e.Resume)
+                .HasMaxLength(191)
+                .HasColumnName("resume");
+            entity.Property(e => e.Skill)
+                .HasColumnType("text")
+                .HasColumnName("skill");
+            entity.Property(e => e.Stage)
+                .HasDefaultValueSql("'1'")
+                .HasColumnName("stage");
+            entity.Property(e => e.State)
+                .HasMaxLength(191)
+                .HasColumnName("state");
+            entity.Property(e => e.TermsConditionCheck)
+                .HasMaxLength(191)
+                .HasColumnName("terms_condition_check");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.ZipCode)
+                .HasMaxLength(191)
+                .HasColumnName("zip_code");
+        });
+
+        modelBuilder.Entity<JobApplicationNote>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("job_application_notes")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.ApplicationId).HasColumnName("application_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Note)
+                .HasColumnType("text")
+                .HasColumnName("note");
+            entity.Property(e => e.NoteCreated).HasColumnName("note_created");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<JobCategory>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("job_categories")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<JobOnBoard>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("job_on_boards")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Application).HasColumnName("application");
+            entity.Property(e => e.ConvertToEmployee).HasColumnName("convert_to_employee");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.DaysOfWeek).HasColumnName("days_of_week");
+            entity.Property(e => e.JobType)
+                .HasMaxLength(191)
+                .HasColumnName("job_type");
+            entity.Property(e => e.JoiningDate).HasColumnName("joining_date");
+            entity.Property(e => e.Salary)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("salary");
+            entity.Property(e => e.SalaryDuration)
+                .HasMaxLength(191)
+                .HasColumnName("salary_duration");
+            entity.Property(e => e.SalaryType)
+                .HasMaxLength(191)
+                .HasColumnName("salary_type");
+            entity.Property(e => e.Status)
+                .HasMaxLength(191)
+                .HasColumnName("status");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<JobStage>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("job_stages")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Order).HasColumnName("order");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<JoinU>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("join_us")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => e.Email, "join_us_email_unique").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Email)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("email");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<JoiningLetter>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("joining_letters")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Content)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("content");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Lang)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("lang");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<LandingPageSection>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("landing_page_sections")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Content)
+                .HasColumnType("text")
+                .HasColumnName("content");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.DefaultContent)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("default_content");
+            entity.Property(e => e.SectionBladeFileName)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("section_blade_file_name");
+            entity.Property(e => e.SectionDemoImage)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("section_demo_image");
+            entity.Property(e => e.SectionName)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("section_name");
+            entity.Property(e => e.SectionOrder).HasColumnName("section_order");
+            entity.Property(e => e.SectionType)
+                .IsRequired()
+                .HasColumnType("enum('section-1','section-2','section-3','section-4','section-5','section-6','section-7','section-8','section-9','section-10','section-plan')")
+                .HasColumnName("section_type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<LandingPageSetting>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("landing_page_settings")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => e.Name, "landing_page_settings_name_unique").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.Value).HasColumnName("value");
+        });
+
+        modelBuilder.Entity<Language>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("languages")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Code)
+                .HasMaxLength(191)
+                .HasColumnName("code");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.FullName)
+                .HasMaxLength(191)
+                .HasColumnName("fullName");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Leaf>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("leaves")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AllocatedLeave)
+                .HasMaxLength(200)
+                .HasColumnName("allocated_leave");
+            entity.Property(e => e.AppliedOn).HasColumnName("applied_on");
+            entity.Property(e => e.AvailbleLeave)
+                .HasMaxLength(200)
+                .HasColumnName("availble_leave");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.LeaveReason)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("leave_reason");
+            entity.Property(e => e.LeaveType)
+                .HasMaxLength(200)
+                .HasColumnName("leave_type");
+            entity.Property(e => e.LeaveTypeId).HasColumnName("leave_type_id");
+            entity.Property(e => e.Remark)
+                .HasMaxLength(191)
+                .HasColumnName("remark");
+            entity.Property(e => e.SalaryTypeLeave)
+                .HasMaxLength(200)
+                .HasColumnName("salary_type_leave");
+            entity.Property(e => e.StartDate).HasColumnName("start_date");
+            entity.Property(e => e.Status)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("status");
+            entity.Property(e => e.TotalLeaveDays)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("total_leave_days");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UsedLeave)
+                .HasMaxLength(200)
+                .HasColumnName("used_leave");
+        });
+
+        modelBuilder.Entity<LeaveType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("leave_types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CarryForwardLeave)
+                .HasPrecision(10, 2)
+                .HasColumnName("carry_forward_leave");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Days)
+                .HasPrecision(8, 2)
+                .HasColumnName("days");
+            entity.Property(e => e.EmployeeId)
+                .HasMaxLength(200)
+                .HasColumnName("employee_id");
+            entity.Property(e => e.MonthLeave)
+                .HasPrecision(10, 2)
+                .HasColumnName("month_leave");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Loan>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("loans")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Amount)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("amount");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.LoanOption).HasColumnName("loan_option");
+            entity.Property(e => e.Reason)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("reason");
+            entity.Property(e => e.StartDate).HasColumnName("start_date");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.Type)
+                .HasMaxLength(191)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<LoanOption>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("loan_options")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<LoginDetail>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("login_details")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Date)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("date");
+            entity.Property(e => e.Details)
+                .IsRequired()
+                .HasColumnType("text");
+            entity.Property(e => e.Ip)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("ip");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UserId)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("user_id");
+        });
+
+        modelBuilder.Entity<Meeting>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("meetings")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.BranchId).HasColumnName("branch_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Date).HasColumnName("date");
+            entity.Property(e => e.DepartmentId)
+                .IsRequired()
+                .HasColumnName("department_id");
+            entity.Property(e => e.EmployeeId)
+                .IsRequired()
+                .HasColumnName("employee_id");
+            entity.Property(e => e.Note)
+                .HasColumnType("text")
+                .HasColumnName("note");
+            entity.Property(e => e.Time)
+                .HasColumnType("time")
+                .HasColumnName("time");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<MeetingEmployee>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("meeting_employees")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.MeetingId).HasColumnName("meeting_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Migration>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("migrations")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Batch).HasColumnName("batch");
+            entity.Property(e => e.Migration1)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("migration");
+        });
+
+        modelBuilder.Entity<ModelHasPermission>(entity =>
+        {
+            entity.HasKey(e => new { e.PermissionId, e.ModelId, e.ModelType })
+                .HasName("PRIMARY")
+                .HasAnnotation("MySql:IndexPrefixLength", new[] { 0, 0, 0 });
+
+            entity
+                .ToTable("model_has_permissions")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => new { e.ModelId, e.ModelType }, "model_has_permissions_model_id_model_type_index");
+
+            entity.Property(e => e.PermissionId).HasColumnName("permission_id");
+            entity.Property(e => e.ModelId).HasColumnName("model_id");
+            entity.Property(e => e.ModelType)
+                .HasMaxLength(191)
+                .HasColumnName("model_type");
+
+            entity.HasOne(d => d.Permission).WithMany(p => p.ModelHasPermissions)
+                .HasForeignKey(d => d.PermissionId)
+                .HasConstraintName("model_has_permissions_permission_id_foreign");
+        });
+
+        modelBuilder.Entity<ModelHasRole>(entity =>
+        {
+            entity.HasKey(e => new { e.RoleId, e.ModelId, e.ModelType })
+                .HasName("PRIMARY")
+                .HasAnnotation("MySql:IndexPrefixLength", new[] { 0, 0, 0 });
+
+            entity
+                .ToTable("model_has_roles")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => new { e.ModelId, e.ModelType }, "model_has_roles_model_id_model_type_index");
+
+            entity.Property(e => e.RoleId).HasColumnName("role_id");
+            entity.Property(e => e.ModelId).HasColumnName("model_id");
+            entity.Property(e => e.ModelType)
+                .HasMaxLength(191)
+                .HasColumnName("model_type");
+
+            entity.HasOne(d => d.Role).WithMany(p => p.ModelHasRoles)
+                .HasForeignKey(d => d.RoleId)
+                .HasConstraintName("model_has_roles_role_id_foreign");
+        });
+
+        modelBuilder.Entity<NocCertificate>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("noc_certificates")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Content)
+                .IsRequired()
+                .HasColumnName("content");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Lang)
+                .IsRequired()
+                .HasMaxLength(255)
+                .HasColumnName("lang");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<NotificationTemplate>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("notification_templates")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.Slug)
+                .HasMaxLength(191)
+                .HasColumnName("slug");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<NotificationTemplateLang>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("notification_template_langs")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Content)
+                .IsRequired()
+                .HasColumnName("content");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Lang)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("lang");
+            entity.Property(e => e.ParentId).HasColumnName("parent_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.Variables)
+                .IsRequired()
+                .HasColumnName("variables");
+        });
+
+        modelBuilder.Entity<Order>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("orders")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => e.OrderId, "orders_order_id_unique").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CardExpMonth)
+                .HasMaxLength(10)
+                .HasColumnName("card_exp_month");
+            entity.Property(e => e.CardExpYear)
+                .HasMaxLength(10)
+                .HasColumnName("card_exp_year");
+            entity.Property(e => e.CardNumber)
+                .HasMaxLength(10)
+                .HasColumnName("card_number");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Email)
+                .HasMaxLength(100)
+                .HasColumnName("email");
+            entity.Property(e => e.IsRefund).HasColumnName("is_refund");
+            entity.Property(e => e.Name)
+                .HasMaxLength(100)
+                .HasColumnName("name");
+            entity.Property(e => e.OrderId)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("order_id");
+            entity.Property(e => e.PaymentStatus)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("payment_status");
+            entity.Property(e => e.PaymentType)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasDefaultValueSql("'Manually'")
+                .HasColumnName("payment_type");
+            entity.Property(e => e.PlanId).HasColumnName("plan_id");
+            entity.Property(e => e.PlanName)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("plan_name");
+            entity.Property(e => e.Price)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("price");
+            entity.Property(e => e.PriceCurrency)
+                .IsRequired()
+                .HasMaxLength(10)
+                .HasColumnName("price_currency");
+            entity.Property(e => e.Receipt)
+                .HasMaxLength(191)
+                .HasColumnName("receipt");
+            entity.Property(e => e.TxnId)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("txn_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+        });
+
+        modelBuilder.Entity<OtherPayment>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("other_payments")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Amount)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("amount");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.Type)
+                .HasMaxLength(191)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Overtime>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("overtimes")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.Hours).HasColumnName("hours");
+            entity.Property(e => e.NumberOfDays).HasColumnName("number_of_days");
+            entity.Property(e => e.Rate)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("rate");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.Type)
+                .HasMaxLength(191)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<PasswordReset>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("password_resets")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => e.Email, "password_resets_email_index");
+
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Email)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("email");
+            entity.Property(e => e.Token)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("token");
+        });
+
+        modelBuilder.Entity<PaySlip>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("pay_slips")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Allowance)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("allowance");
+            entity.Property(e => e.BasicSalary)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("basic_salary");
+            entity.Property(e => e.Commission)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("commission");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.DaysInMonth).HasColumnName("days_in_month");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.GrossSalary)
+                .HasColumnType("double(10,2)")
+                .HasColumnName("gross_salary");
+            entity.Property(e => e.LeaveAvailable)
+                .HasPrecision(10, 2)
+                .HasDefaultValueSql("'0.00'")
+                .HasColumnName("leave_available");
+            entity.Property(e => e.Loan)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("loan");
+            entity.Property(e => e.LopDays)
+                .HasPrecision(10, 2)
+                .HasDefaultValueSql("'0.00'")
+                .HasColumnName("lop_days");
+            entity.Property(e => e.LopDeduction)
+                .HasPrecision(10, 2)
+                .HasDefaultValueSql("'0.00'")
+                .HasColumnName("lop_deduction");
+            entity.Property(e => e.MarkedAttendanceHoliday)
+                .HasPrecision(10, 2)
+                .HasDefaultValueSql("'0.00'")
+                .HasColumnName("marked_attendance_holiday");
+            entity.Property(e => e.NetPayble)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("net_payble");
+            entity.Property(e => e.OtherPayment)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("other_payment");
+            entity.Property(e => e.Overtime)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("overtime");
+            entity.Property(e => e.PaidLeaveTaken)
+                .HasPrecision(10, 2)
+                .HasDefaultValueSql("'0.00'")
+                .HasColumnName("paid_leave_taken");
+            entity.Property(e => e.SalaryMonth)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("salary_month");
+            entity.Property(e => e.SaturationDeduction)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("saturation_deduction");
+            entity.Property(e => e.Status).HasColumnName("status");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.WorkingPaidDays)
+                .HasPrecision(10, 2)
+                .HasDefaultValueSql("'0.00'")
+                .HasColumnName("Working_paid_days");
+        });
+
+        modelBuilder.Entity<Payee>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("payees")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.ContactNumber)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("contact_number");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.PayeeName)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("payee_name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Payer>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("payers")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.ContactNumber)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("contact_number");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.PayerName)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("payer_name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<PaymentType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("payment_types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<PayslipType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("payslip_types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<PerformanceType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("performance__types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Permission>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("permissions")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.GuardName)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("guard_name");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+
+            entity.HasMany(d => d.Roles).WithMany(p => p.Permissions)
+                .UsingEntity<Dictionary<string, object>>(
+                    "RoleHasPermission",
+                    r => r.HasOne<Role>().WithMany()
+                        .HasForeignKey("RoleId")
+                        .HasConstraintName("role_has_permissions_role_id_foreign"),
+                    l => l.HasOne<Permission>().WithMany()
+                        .HasForeignKey("PermissionId")
+                        .HasConstraintName("role_has_permissions_permission_id_foreign"),
+                    j =>
+                    {
+                        j.HasKey("PermissionId", "RoleId")
+                            .HasName("PRIMARY")
+                            .HasAnnotation("MySql:IndexPrefixLength", new[] { 0, 0 });
+                        j
+                            .ToTable("role_has_permissions")
+                            .UseCollation("utf8mb4_unicode_ci");
+                        j.HasIndex(new[] { "RoleId" }, "role_has_permissions_role_id_foreign");
+                        j.IndexerProperty<ulong>("PermissionId").HasColumnName("permission_id");
+                        j.IndexerProperty<ulong>("RoleId").HasColumnName("role_id");
+                    });
+        });
+
+        modelBuilder.Entity<PersonalAccessToken>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("personal_access_tokens")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => e.Token, "personal_access_tokens_token_unique").IsUnique();
+
+            entity.HasIndex(e => new { e.TokenableType, e.TokenableId }, "personal_access_tokens_tokenable_type_tokenable_id_index");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Abilities)
+                .HasColumnType("text")
+                .HasColumnName("abilities");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.ExpiresAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("expires_at");
+            entity.Property(e => e.LastUsedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("last_used_at");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.Token)
+                .IsRequired()
+                .HasMaxLength(64)
+                .HasColumnName("token");
+            entity.Property(e => e.TokenableId).HasColumnName("tokenable_id");
+            entity.Property(e => e.TokenableType)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("tokenable_type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Plan>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("plans")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => e.Name, "plans_name_unique").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.Duration)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("duration");
+            entity.Property(e => e.EnableChatgpt)
+                .HasMaxLength(191)
+                .HasColumnName("enable_chatgpt");
+            entity.Property(e => e.Image)
+                .HasMaxLength(191)
+                .HasColumnName("image");
+            entity.Property(e => e.IsDisable)
+                .HasDefaultValueSql("'1'")
+                .HasColumnName("is_disable");
+            entity.Property(e => e.MaxEmployees).HasColumnName("max_employees");
+            entity.Property(e => e.MaxUsers).HasColumnName("max_users");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(100)
+                .HasColumnName("name");
+            entity.Property(e => e.Price)
+                .HasPrecision(30, 2)
+                .HasDefaultValueSql("'0.00'")
+                .HasColumnName("price");
+            entity.Property(e => e.StorageLimit)
+                .HasColumnType("double(20,2)")
+                .HasColumnName("storage_limit");
+            entity.Property(e => e.Trial).HasColumnName("trial");
+            entity.Property(e => e.TrialDays)
+                .HasMaxLength(191)
+                .HasColumnName("trial_days");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<PlanRequest>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("plan_requests")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Duration)
+                .IsRequired()
+                .HasMaxLength(20)
+                .HasDefaultValueSql("'monthly'")
+                .HasColumnName("duration");
+            entity.Property(e => e.PlanId).HasColumnName("plan_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+        });
+
+        modelBuilder.Entity<Promotion>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("promotions")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("description");
+            entity.Property(e => e.DesignationId).HasColumnName("designation_id");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.PromotionDate).HasColumnName("promotion_date");
+            entity.Property(e => e.PromotionTitle)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("promotion_title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<ReferralSetting>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("referral_settings")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Guideline)
+                .IsRequired()
+                .HasColumnName("guideline");
+            entity.Property(e => e.IsEnable).HasColumnName("is_enable");
+            entity.Property(e => e.MinimumThresholdAmount).HasColumnName("minimum_threshold_amount");
+            entity.Property(e => e.Percentage).HasColumnName("percentage");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<ReferralTransaction>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("referral_transactions")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Commission).HasColumnName("commission");
+            entity.Property(e => e.CompanyId).HasColumnName("company_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.PlanId).HasColumnName("plan_id");
+            entity.Property(e => e.PlanPrice)
+                .HasPrecision(15, 2)
+                .HasColumnName("plan_price");
+            entity.Property(e => e.ReferralCode).HasColumnName("referral_code");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Resignation>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("resignations")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("description");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.NoticeDate).HasColumnName("notice_date");
+            entity.Property(e => e.ResignationDate).HasColumnName("resignation_date");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Role>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("roles")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.GuardName)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("guard_name");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.ParentId).HasColumnName("parent_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<SalaryBand>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("salary_bands")
+                .UseCollation("utf8mb4_general_ci");
+
+            entity.HasIndex(e => e.CreatedBy, "created_by");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Allowances)
+                .HasColumnName("allowances")
+                .UseCollation("utf8mb4_bin");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.CtcBand)
+                .IsRequired()
+                .HasMaxLength(255)
+                .HasColumnName("ctc_band");
+            entity.Property(e => e.Deductions)
+                .HasColumnName("deductions")
+                .UseCollation("utf8mb4_bin");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(255)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<SalaryDetail>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("salary_details")
+                .UseCollation("utf8mb4_general_ci");
+
+            entity.HasIndex(e => e.SalaryBandId, "salary_band_id");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.BasicAnnually)
+                .HasPrecision(15, 2)
+                .HasColumnName("basic_annually");
+            entity.Property(e => e.BasicMonthly)
+                .HasPrecision(15, 2)
+                .HasColumnName("basic_monthly");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.HraAnnually)
+                .HasPrecision(15, 2)
+                .HasColumnName("hra_annually");
+            entity.Property(e => e.HraMonthly)
+                .HasPrecision(15, 2)
+                .HasColumnName("hra_monthly");
+            entity.Property(e => e.ProvidentFundAnnually)
+                .HasPrecision(15, 2)
+                .HasColumnName("provident_fund_annually");
+            entity.Property(e => e.ProvidentFundMonthly)
+                .HasPrecision(15, 2)
+                .HasColumnName("provident_fund_monthly");
+            entity.Property(e => e.SalaryBandId).HasColumnName("salary_band_id");
+            entity.Property(e => e.SpecialAllowanceAnnually)
+                .HasPrecision(15, 2)
+                .HasColumnName("special_allowance_annually");
+            entity.Property(e => e.SpecialAllowanceMonthly)
+                .HasPrecision(15, 2)
+                .HasColumnName("special_allowance_monthly");
+            entity.Property(e => e.StatutoryBonusAnnually)
+                .HasPrecision(15, 2)
+                .HasColumnName("statutory_bonus_annually");
+            entity.Property(e => e.StatutoryBonusMonthly)
+                .HasPrecision(15, 2)
+                .HasColumnName("statutory_bonus_monthly");
+            entity.Property(e => e.TotalCtcAnnually)
+                .HasPrecision(15, 2)
+                .HasColumnName("total_ctc_annually");
+            entity.Property(e => e.TotalCtcMonthly)
+                .HasPrecision(15, 2)
+                .HasColumnName("total_ctc_monthly");
+            entity.Property(e => e.TotalPayAnnually)
+                .HasPrecision(15, 2)
+                .HasColumnName("total_pay_annually");
+            entity.Property(e => e.TotalPayMonthly)
+                .HasPrecision(15, 2)
+                .HasColumnName("total_pay_monthly");
+            entity.Property(e => e.UpdatedAt)
+                .ValueGeneratedOnAddOrUpdate()
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<SaturationDeduction>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("saturation_deductions")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Amount)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("amount");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.DeductionOption).HasColumnName("deduction_option");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.Type)
+                .HasMaxLength(191)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<SetSalary>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("set_salaries")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Setting>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("settings")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => new { e.Name, e.CreatedBy }, "settings_name_created_by_unique").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.Value)
+                .IsRequired()
+                .HasColumnName("value");
+        });
+
+        modelBuilder.Entity<Template>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("template")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.FieldJson)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("field_json");
+            entity.Property(e => e.IsTone).HasColumnName("is_tone");
+            entity.Property(e => e.Module)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("module");
+            entity.Property(e => e.Prompt)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("prompt");
+            entity.Property(e => e.TemplateName)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("template_name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Termination>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("terminations")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .IsRequired()
+                .HasColumnName("description");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.NoticeDate).HasColumnName("notice_date");
+            entity.Property(e => e.TerminationDate).HasColumnName("termination_date");
+            entity.Property(e => e.TerminationType)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("termination_type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<TerminationType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("termination_types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Ticket>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("tickets")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Attachment)
+                .HasMaxLength(191)
+                .HasColumnName("attachment");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.Priority)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("priority");
+            entity.Property(e => e.Status)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("status");
+            entity.Property(e => e.TicketCode)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("ticket_code");
+            entity.Property(e => e.TicketCreated).HasColumnName("ticket_created");
+            entity.Property(e => e.Title)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<TicketReply>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("ticket_replies")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Attachment)
+                .HasMaxLength(191)
+                .HasColumnName("attachment");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.IsRead).HasColumnName("is_read");
+            entity.Property(e => e.TicketId).HasColumnName("ticket_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<TimeSheet>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("time_sheets")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Date).HasColumnName("date");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.Hours)
+                .HasColumnType("double(8,2)")
+                .HasColumnName("hours");
+            entity.Property(e => e.Remark)
+                .HasColumnType("text")
+                .HasColumnName("remark");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Trainer>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("trainers")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Address)
+                .HasColumnType("text")
+                .HasColumnName("address");
+            entity.Property(e => e.Branch)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("branch");
+            entity.Property(e => e.Contact)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("contact");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Email)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("email");
+            entity.Property(e => e.Expertise)
+                .HasColumnType("text")
+                .HasColumnName("expertise");
+            entity.Property(e => e.Firstname)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("firstname");
+            entity.Property(e => e.Lastname)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("lastname");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Training>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("trainings")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Branch).HasColumnName("branch");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.Employee).HasColumnName("employee");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.Performance).HasColumnName("performance");
+            entity.Property(e => e.Remarks)
+                .HasColumnType("text")
+                .HasColumnName("remarks");
+            entity.Property(e => e.StartDate).HasColumnName("start_date");
+            entity.Property(e => e.Status).HasColumnName("status");
+            entity.Property(e => e.Trainer).HasColumnName("trainer");
+            entity.Property(e => e.TrainerOption).HasColumnName("trainer_option");
+            entity.Property(e => e.TrainingCost)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("training_cost");
+            entity.Property(e => e.TrainingType).HasColumnName("training_type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<TrainingType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("training_types")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<TransactionOrder>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("transaction_orders")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Date).HasColumnName("date");
+            entity.Property(e => e.ReqAmount)
+                .HasPrecision(15, 2)
+                .HasColumnName("req_amount");
+            entity.Property(e => e.ReqUserId).HasColumnName("req_user_id");
+            entity.Property(e => e.Status).HasColumnName("status");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Transfer>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("transfers")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.BranchId).HasColumnName("branch_id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("created_by");
+            entity.Property(e => e.DepartmentId).HasColumnName("department_id");
+            entity.Property(e => e.Description)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("description");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.TransferDate).HasColumnName("transfer_date");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<TransferBalance>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("transfer_balances")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Amount)
+                .HasColumnType("double(15,2)")
+                .HasColumnName("amount");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Date).HasColumnName("date");
+            entity.Property(e => e.Description)
+                .HasColumnType("text")
+                .HasColumnName("description");
+            entity.Property(e => e.FromAccountId).HasColumnName("from_account_id");
+            entity.Property(e => e.PaymentTypeId).HasColumnName("payment_type_id");
+            entity.Property(e => e.ReferalId)
+                .HasMaxLength(191)
+                .HasColumnName("referal_id");
+            entity.Property(e => e.ToAccountId).HasColumnName("to_account_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<Travel>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("travels")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("description");
+            entity.Property(e => e.EmployeeId).HasColumnName("employee_id");
+            entity.Property(e => e.EndDate).HasColumnName("end_date");
+            entity.Property(e => e.PlaceOfVisit)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("place_of_visit");
+            entity.Property(e => e.PurposeOfVisit)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("purpose_of_visit");
+            entity.Property(e => e.StartDate).HasColumnName("start_date");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+        });
+
+        modelBuilder.Entity<User>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("users")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.HasIndex(e => e.Email, "users_email_unique").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.ActiveStatus).HasColumnName("active_status");
+            entity.Property(e => e.Avatar)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasDefaultValueSql("'avatar.png'")
+                .HasColumnName("avatar");
+            entity.Property(e => e.CommissionAmount).HasColumnName("commission_amount");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("created_by");
+            entity.Property(e => e.DarkMode).HasColumnName("dark_mode");
+            entity.Property(e => e.Email)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("email");
+            entity.Property(e => e.EmailVerifiedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("email_verified_at");
+            entity.Property(e => e.IsActive)
+                .HasDefaultValueSql("'1'")
+                .HasColumnName("is_active");
+            entity.Property(e => e.IsDisable)
+                .HasDefaultValueSql("'1'")
+                .HasColumnName("is_disable");
+            entity.Property(e => e.IsLoginEnable)
+                .HasDefaultValueSql("'1'")
+                .HasColumnName("is_login_enable");
+            entity.Property(e => e.Lang)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("lang");
+            entity.Property(e => e.LastLogin)
+                .HasColumnType("timestamp")
+                .HasColumnName("last_login");
+            entity.Property(e => e.MessengerColor)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasDefaultValueSql("'#2180f3'")
+                .HasColumnName("messenger_color");
+            entity.Property(e => e.Name)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("name");
+            entity.Property(e => e.Password)
+                .HasMaxLength(191)
+                .HasColumnName("password");
+            entity.Property(e => e.Plan).HasColumnName("plan");
+            entity.Property(e => e.PlanExpireDate).HasColumnName("plan_expire_date");
+            entity.Property(e => e.ReferralCode).HasColumnName("referral_code");
+            entity.Property(e => e.RememberToken)
+                .HasMaxLength(100)
+                .HasColumnName("remember_token");
+            entity.Property(e => e.RequestedPlan).HasColumnName("requested_plan");
+            entity.Property(e => e.StorageLimit)
+                .HasColumnType("double(20,2)")
+                .HasColumnName("storage_limit");
+            entity.Property(e => e.TrialExpireDate).HasColumnName("trial_expire_date");
+            entity.Property(e => e.TrialPlan).HasColumnName("trial_plan");
+            entity.Property(e => e.Type)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("type");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UsedReferralCode).HasColumnName("used_referral_code");
+        });
+
+        modelBuilder.Entity<UserCoupon>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("user_coupons")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Coupon).HasColumnName("coupon");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Order)
+                .HasMaxLength(191)
+                .HasColumnName("order");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.User).HasColumnName("user");
+        });
+
+        modelBuilder.Entity<UserEmailTemplate>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("user_email_templates")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.IsActive)
+                .HasDefaultValueSql("'1'")
+                .HasColumnName("is_active");
+            entity.Property(e => e.TemplateId).HasColumnName("template_id");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+        });
+
+        modelBuilder.Entity<Warning>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("warnings")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("created_by");
+            entity.Property(e => e.Description)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("description");
+            entity.Property(e => e.Subject)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasColumnName("subject");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.WarningBy).HasColumnName("warning_by");
+            entity.Property(e => e.WarningDate).HasColumnName("warning_date");
+            entity.Property(e => e.WarningTo).HasColumnName("warning_to");
+        });
+
+        modelBuilder.Entity<Webhook>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("webhooks")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Method)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("method");
+            entity.Property(e => e.Module)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("module");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.Url)
+                .IsRequired()
+                .HasColumnType("text")
+                .HasColumnName("url");
+        });
+
+        modelBuilder.Entity<ZoomMeeting>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
+
+            entity
+                .ToTable("zoom_meetings")
+                .UseCollation("utf8mb4_unicode_ci");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("created_at");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.Duration).HasColumnName("duration");
+            entity.Property(e => e.JoinUrl)
+                .HasMaxLength(191)
+                .HasColumnName("join_url");
+            entity.Property(e => e.MeetingId)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasDefaultValueSql("'0'")
+                .HasColumnName("meeting_id");
+            entity.Property(e => e.Password)
+                .HasMaxLength(191)
+                .HasColumnName("password");
+            entity.Property(e => e.StartDate)
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                .HasColumnType("timestamp")
+                .HasColumnName("start_date");
+            entity.Property(e => e.StartUrl)
+                .HasColumnType("text")
+                .HasColumnName("start_url");
+            entity.Property(e => e.Status)
+                .HasMaxLength(191)
+                .HasDefaultValueSql("'waiting'")
+                .HasColumnName("status");
+            entity.Property(e => e.Title)
+                .HasMaxLength(191)
+                .HasColumnName("title");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("timestamp")
+                .HasColumnName("updated_at");
+            entity.Property(e => e.UserId)
+                .IsRequired()
+                .HasMaxLength(191)
+                .HasDefaultValueSql("'0'")
+                .HasColumnName("user_id");
+        });
 
         OnModelCreatingPartial(modelBuilder);
     }

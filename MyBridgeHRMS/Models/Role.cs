@@ -7,7 +7,7 @@ namespace MyBridgeHRMS.Models;
 
 public partial class Role
 {
-    public int Id { get; set; }
+    public ulong Id { get; set; }
 
     public string Name { get; set; }
 
@@ -21,9 +21,7 @@ public partial class Role
 
     public ulong? ParentId { get; set; }
 
-    public ICollection<Employees> Employees { get; set; } = new List<Employees>();
+    public virtual ICollection<ModelHasRole> ModelHasRoles { get; set; } = new List<ModelHasRole>();
 
-    //public virtual ICollection<ModelHasRole> ModelHasRoles { get; set; } = new List<ModelHasRole>();
-
-    //public virtual ICollection<Permission> Permissions { get; set; } = new List<Permission>();
+    public virtual ICollection<Permission> Permissions { get; set; } = new List<Permission>();
 }
